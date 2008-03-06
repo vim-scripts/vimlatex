@@ -1,0 +1,36 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2182
+
+# vimlatex: Script wrapper for TeX/LaTeX/etc. that sanitizes output to
+#           be compatible with Vim-LaTeX's errorformat. Prevents Vim
+#           from opening the wrong file after some errors.
+#
+#           This script is inspired by
+#
+# http://hermitte.free.fr/vim/ressources/vimfiles/compiler/vim-tex_sh.html
+#
+# and
+#
+# http://www.unix.com/shell-programming-scripting/20218-pipelining.html
+#
+# Original author: Ted Pavlic
+#                  ted@tedpavlic.com
+#                  http://www.tedpavlic.com/
+#
+# Mercurial source code repository for original author's version:
+#                  http://hg.tedpavlic.com/vimlatex/
+#
+# Copyright (c) 2008 Theodore P. Pavlic under MIT license (http://www.opensource.org/licenses/mit-license.php)
+#
+# Usage: vimlatex %command [%arguments]
+#
+#        where the command line:
+#
+#        %command %arguments
+#
+#        would texify as normal. In other words, the "vimlatex" command
+#        can simply be added before a given working command line.
+#
+# For more information (and history), see:
+#
+# http://phaseportrait.blogspot.com/2008/03/fixing-vim-latex-compiler-error.html
+#
