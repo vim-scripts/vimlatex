@@ -12,11 +12,11 @@
 #
 # http://www.unix.com/shell-programming-scripting/20218-pipelining.html
 #
-# Version: 1.03
+# Version: 1.04 (copyright text given below)
 #
-# Author: Ted Pavlic
-#         ted@tedpavlic.com
-#         http://www.tedpavlic.com/
+# Original author: Ted Pavlic
+#                  ted@tedpavlic.com
+#                  http://www.tedpavlic.com/
 #
 # Usage: vimlatex %command [%arguments]
 #
@@ -35,8 +35,35 @@
 #
 # 1.0  : 03/05/2008 - Initial release (Ted Pavlic)
 # 1.01 : 03/07/2008 - Removed extra sed pipes at Christian Ebert's suggestion (Ted Pavlic)
-# 1.02 : 03/07/2008 - Improved portability to old sed's (Christian Ebert suggestion; solution partly at http://www.culmination.org/2008/02/10/sed-on-mac-os-x-105-leopard/)
-# 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines
+# 1.02 : 03/07/2008 - Improved portability to old sed's (Christian Ebert suggestion; solution partly at http://www.culmination.org/2008/02/10/sed-on-mac-os-x-105-leopard/, implemented by Ted Pavlic)
+# 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines (Ted Pavlic)
+# 1.04 : 05/27/2008 - Made copyright explicit (Ted Pavlic)
+#
+# To-do list:
+#
+#       * Improve fix added in version 1.03
+#       * Verify that script works with /bin/sh from OS/X 10.5+
+#  
+# Copyright (c) 2008 Theodore P. Pavlic
+# 
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions: 
+# 
+# The above copyright notice and this permission notice shall be
+# included in all copies or substantial portions of the Software. 
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
 #
 
 texprg="${1}"
