@@ -12,11 +12,14 @@
 #
 # http://www.unix.com/shell-programming-scripting/20218-pipelining.html
 #
-# Version: 1.04 (copyright text given below)
+# Version: 1.05 (copyright text given below)
 #
 # Original author: Ted Pavlic
 #                  ted@tedpavlic.com
 #                  http://www.tedpavlic.com/
+#
+# Mercurial source code repository for original author's version:
+#                  http://hg.tedpavlic.com/vimlatex/
 #
 # Usage: vimlatex %command [%arguments]
 #
@@ -38,6 +41,7 @@
 # 1.02 : 03/07/2008 - Improved portability to old sed's (Christian Ebert suggestion; solution partly at http://www.culmination.org/2008/02/10/sed-on-mac-os-x-105-leopard/, implemented by Ted Pavlic)
 # 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines (Ted Pavlic)
 # 1.04 : 05/27/2008 - Made copyright explicit (Ted Pavlic)
+# 1.05 : 06/17/2008 - Added link to Mercurial repository (Ted Pavlic)
 #
 # To-do list:
 #
