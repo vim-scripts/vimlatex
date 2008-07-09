@@ -12,7 +12,7 @@
 #
 # http://www.unix.com/shell-programming-scripting/20218-pipelining.html
 #
-# Version: 1.05 (copyright text given below)
+# Version: 1.06 (copyright text given below)
 #
 # Original author: Ted Pavlic
 #                  ted@tedpavlic.com
@@ -42,6 +42,7 @@
 # 1.03 : 05/27/2008 - First attempt at preventing breaking out (..) from lines (Ted Pavlic)
 # 1.04 : 05/27/2008 - Made copyright explicit (Ted Pavlic)
 # 1.05 : 06/17/2008 - Added link to Mercurial repository (Ted Pavlic)
+# 1.06 : 07/09/2008 - Attempt to fix overrun problem (introduced by 1.03) for (..)..) lines (Ted Pavlic)
 #
 # To-do list:
 #
@@ -82,7 +83,7 @@ retcode=$( exec 4>&1; { ${texprg} "$@"; echo $? >&4; } | exec sed \
                 -e 's/\((\)\(%x%o%x%o_\)/\1\'$'\n''\2/g' \
                 -e 's/\(_%z%x%z%x\)\()\)/\1\'$'\n''\2/g' \
                 -e 's/(/\'$'\n''(/g' \
-                -e 's/)/)\'$'\n''/g' \
+                -e 's/)/\'$'\n'')\'$'\n''/g' \
                 -e 's/%x%o%x%o_/(/g' \
                 -e 's/_%z%x%z%x/)/g' >&3)
 exec 3>&-
